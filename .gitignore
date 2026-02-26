@@ -3,4 +3,7 @@ venv/
 __pycache__/
 *.csv
 *.parquet
-.DS_Store
+.DS_Storevenv/
+.env
+__pycache__/
+*.pyc
