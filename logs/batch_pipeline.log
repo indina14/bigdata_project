@@ -1,0 +1,89 @@
+2026-02-26 12:33:25,777 - INFO - Pipeline started
+2026-02-26 12:33:44,561 - INFO - Closing down clientserver connection
+2026-02-26 12:37:15,302 - INFO - Pipeline started
+2026-02-26 12:37:31,739 - INFO - Closing down clientserver connection
+2026-02-26 12:40:34,863 - INFO - Pipeline started
+2026-02-26 12:43:11,369 - INFO - Pipeline completed successfully
+2026-02-26 12:43:11,526 - INFO - Closing down clientserver connection
+2026-02-26 12:58:57,912 - INFO - Pipeline started
+2026-02-26 13:01:34,076 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+2026-02-26 13:01:34,201 - INFO - Closing down clientserver connection
+2026-02-26 13:01:34,209 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2026-02-26 13:01:34,229 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/pyspark/core/context.py", line 408, in signal_handler
+    self.cancelAllJobs()
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/pyspark/core/context.py", line 2506, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py", line 263, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o16.sc
+2026-02-26 13:01:34,250 - INFO - Closing down clientserver connection
+2026-02-26 13:01:34,250 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/pyspark/core/context.py", line 408, in signal_handler
+    self.cancelAllJobs()
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/pyspark/core/context.py", line 2506, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py", line 263, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o16.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/indina/bigdata-project/venv/lib/python3.12/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2026-02-26 13:01:34,252 - INFO - Closing down clientserver connection
+2026-02-26 13:01:34,281 - INFO - Closing down clientserver connection
+2026-02-26 13:01:45,708 - INFO - Pipeline started
