@@ -1,0 +1,9 @@
+ source /home/indina/bigdata-project/venv/bin/activate
+venv/
+logs/
+data/
+stream_data/
+__pycache__/
+*.parquet
+*.json
+checkpoint/
